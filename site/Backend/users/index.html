@@ -1,0 +1,866 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentación de la Aplicación Users - Grow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-aplicacion-users" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Grow" class="md-header__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentación de la Aplicación Users
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Frontend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grow" class="md-nav__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Grow
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serializadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serializadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serializadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tokenserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      TokenSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TokenSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profileserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      ProfileSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ProfileSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_user_profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_user_profile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_user_profile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#users_per_month" class="md-nav__link">
+    <span class="md-ellipsis">
+      users_per_month
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="users_per_month">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_barbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_barbers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_barbers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#senales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Señales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Señales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create_user_related_models" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_user_related_models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="create_user_related_models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-aplicacion-users">Documentación de la Aplicación Users</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La aplicación <code>users</code> gestiona la información de los usuarios del sistema, incluyendo sus perfiles y tokens de autenticación. Permite la creación de perfiles extendidos y la gestión de roles.</p>
+<h2 id="modelos">Modelos</h2>
+<h3 id="profile">Profile</h3>
+<pre><code class="language-python">
+class Profile(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa el perfil extendido de un usuario, incluyendo su rol en el sistema.
+
+    Atributos
+    ----------
+    user : OneToOneField
+        Relación uno a uno con el usuario del sistema.
+    role : CharField
+        Rol del usuario, que puede ser ADMIN, WORKER o CLIENT.
+    created_at : DateTimeField
+        Fecha y hora de creación del perfil.
+    updated_at : DateTimeField
+        Fecha y hora de la última actualización del perfil.
+    &quot;&quot;&quot;
+    class Role(models.TextChoices):
+        ADMIN = 'A', 'ADMIN'
+        WORKER = 'W', 'WORKER'
+        CLIENT = 'C', 'CLIENT'
+
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='profile'
+    )
+    role = models.CharField(choices=Role.choices, max_length=1, default=Role.CLIENT)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f'{self.user}'
+</code></pre>
+<h4 id="descripcion">Descripción</h4>
+<p>El modelo Profile representa el perfil extendido de un usuario, incluyendo su rol en el sistema (ADMIN, WORKER o CLIENT) y las fechas de creación y actualización.</p>
+<h3 id="token">Token</h3>
+<pre><code class="language-python">class Token(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa un token de autenticación único asociado a un usuario.
+
+    Atributos
+    ----------
+    user : OneToOneField
+        Relación uno a uno con el usuario del sistema.
+    key : UUIDField
+        Token único generado automáticamente para el usuario.
+    created_at : DateTimeField
+        Fecha y hora de creación del token.
+    &quot;&quot;&quot;
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='token'
+    )
+    key = models.UUIDField(default=uuid.uuid4, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.user}'
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_1">Descripción</h4>
+<p>El modelo Token representa un token de autenticación único asociado a un usuario, que se genera automáticamente al crear un nuevo usuario.</p>
+<h2 id="serializadores">Serializadores</h2>
+<h3 id="tokenserializer">TokenSerializer</h3>
+<pre><code class="language-python">from shared.serializers import BaseSerializer
+
+class TokenSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para el modelo Token.
+
+    Métodos
+    -------
+    serialize_instance(instance) -&gt; dict
+        Serializa una instancia de Token en un diccionario con su clave única.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        return {'key': instance.key}
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_2">Descripción</h4>
+<p>El TokenSerializer se utiliza para serializar instancias del modelo Token, proporcionando una representación en formato JSON de la clave del token.</p>
+<h3 id="profileserializer">ProfileSerializer</h3>
+<pre><code class="language-python">class ProfileSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para el modelo Profile.
+
+    Métodos
+    -------
+    serialize_instance(instance) -&gt; dict
+        Serializa una instancia de Profile en un diccionario con sus atributos principales.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        return {
+            'id': instance.user.id,
+            'user': instance.user.username,
+            'role': instance.role,
+            'token': TokenSerializer(instance.user.token).serialize_instance(instance.user.token),
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_3">Descripción</h4>
+<p>El ProfileSerializer se utiliza para serializar instancias del modelo Profile, proporcionando una representación en formato JSON de los atributos del perfil, incluyendo el usuario y su token.
+Vistas</p>
+<h3 id="get_user_profile">get_user_profile</h3>
+<pre><code class="language-python">
+@login_required
+@csrf_exempt
+@required_method('GET')
+def get_user_profile(request):
+    &quot;&quot;&quot;
+    Devuelve el perfil del usuario autenticado.
+
+    Este endpoint permite a un usuario autenticado obtener su perfil.
+    Si el perfil no se encuentra, se devuelve un error 404.
+    &quot;&quot;&quot;
+    try:
+        profile = Profile.objects.get(user=request.user)
+    except Profile.DoesNotExist:
+        return JsonResponse({'error': 'Perfil no encontrado'}, status=404)
+
+    serializer = ProfileSerializer(profile, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_4">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado obtener su perfil. Si el perfil no se encuentra, devuelve un error 404.</p>
+<h3 id="users_per_month">users_per_month</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+@verify_admin
+def users_per_mounth(request):
+    &quot;&quot;&quot;
+    Obtiene la cantidad de usuarios registrados por día durante el mes actual.
+
+    Esta vista recorre cada día del mes actual y cuenta cuántos perfiles de usuario
+    fueron creados en cada fecha.
+    &quot;&quot;&quot;
+    now = timezone.now()
+    first_day_of_month = now.replace(day=1)
+    last_day_of_month = (first_day_of_month + timezone.timedelta(days=31)).replace(
+        day=1
+    ) - timezone.timedelta(days=1)
+
+    user_counts = []
+    labels = []
+
+    for day in range(1, last_day_of_month.day + 1):
+        date = first_day_of_month.replace(day=day)
+        count = Profile.objects.filter(created_at__date=date).count()
+        user_counts.append(count)
+        labels.append(date.strftime('%Y-%m-%d'))
+
+    return JsonResponse(
+        {
+            'labels': labels,
+            'values': user_counts,
+        }
+    )
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_5">Descripción</h4>
+<p>Este endpoint permite a un administrador obtener la cantidad de usuarios registrados por día durante el mes actual.</p>
+<h3 id="get_barbers">get_barbers</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+def get_barbers(request):
+    &quot;&quot;&quot;
+    Devuelve una lista de barberos.
+
+    Este endpoint permite a un usuario autenticado obtener una lista de
+    todos los barberos registrados en el sistema.
+    &quot;&quot;&quot;
+    barbers = Profile.objects.filter(role=Profile.Role.WORKER)
+    serializer = ProfileSerializer(barbers, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_6">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado obtener una lista de todos los barberos registrados en el sistema.</p>
+<h2 id="senales">Señales</h2>
+<h3 id="create_user_related_models">create_user_related_models</h3>
+<pre><code class="language-python">from django.conf import settings
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from .models import Profile, Token
+
+@receiver(post_save, sender=settings.AUTH_USER_MODEL)
+def create_user_related_models(sender, instance, created, **kwargs):
+    &quot;&quot;&quot;
+    Crea modelos relacionados al usuario después de que se guarda una instancia de usuario.
+
+    Este receptor se activa después de que se guarda un nuevo usuario. Si el usuario
+    es creado, se generan automáticamente un perfil y un token de autenticación para él.
+    &quot;&quot;&quot;
+    if created:
+        Profile.objects.create(user=instance)
+        Token.objects.create(user=instance)
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_7">Descripción</h4>
+<p>Esta señal se activa después de que se guarda un nuevo usuario. Si el usuario es creado, se generan automáticamente un perfil y un token de autenticación para él.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

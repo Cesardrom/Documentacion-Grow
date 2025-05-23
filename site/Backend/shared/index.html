@@ -1,0 +1,762 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentación de la Aplicación Shared - Grow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-aplicacion-shared" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Grow" class="md-header__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentación de la Aplicación Shared
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Frontend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grow" class="md-nav__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Grow
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serializadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serializadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serializadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#baseserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      BaseSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decoradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoradores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decoradores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify_token" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_token
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_token">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required_method" class="md-nav__link">
+    <span class="md-ellipsis">
+      required_method
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="required_method">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#load_json_body" class="md-nav__link">
+    <span class="md-ellipsis">
+      load_json_body
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="load_json_body">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#required_fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      required_fields
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="required_fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_admin
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_admin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-aplicacion-shared">Documentación de la Aplicación Shared</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La aplicación <code>shared</code> contiene componentes reutilizables que son utilizados por otras aplicaciones en el proyecto, incluyendo serializadores y decoradores.</p>
+<h2 id="serializadores">Serializadores</h2>
+<h3 id="baseserializer">BaseSerializer</h3>
+<pre><code class="language-python">
+class BaseSerializer(ABC):
+    def __init__(
+        self,
+        to_serialize: object | Iterable[object],
+        *,
+        fields: Iterable[str] = [],
+        request: HttpRequest = None,
+    ):
+        self.to_serialize = to_serialize
+        self.fields = fields
+        self.request = request
+
+    def build_url(self, path: str) -&gt; str:
+        return self.request.build_absolute_uri(path) if self.request else path
+
+    def serialize_instance(self, instance: object) -&gt; dict:
+        raise NotImplementedError
+
+    def __serialize_instance(self, instance: object) -&gt; dict:
+        serialized = self.serialize_instance(instance)
+        return {f: v for f, v in serialized.items() if not self.fields or f in self.fields}
+
+    def serialize(self) -&gt; dict | list[dict]:
+        if not isinstance(self.to_serialize, Iterable):
+            return self.__serialize_instance(self.to_serialize)
+        return [self.__serialize_instance(instance) for instance in self.to_serialize]
+
+    def to_json(self) -&gt; str:
+        return json.dumps(self.serialize())
+
+    def json_response(self) -&gt; str:
+        return JsonResponse(self.serialize(), safe=False)
+</code></pre>
+<h4 id="descripcion">Descripción</h4>
+<p>El BaseSerializer es una clase base para serializadores que permite convertir instancias de modelos en diccionarios que pueden ser fácilmente convertidos a JSON. Proporciona métodos para construir URLs, serializar instancias y generar respuestas JSON.</p>
+<h2 id="decoradores">Decoradores</h2>
+<h3 id="verify_token">verify_token</h3>
+<pre><code class="language-python">
+def verify_token(func):
+    &quot;&quot;&quot;
+    Verifica el token de autenticación del usuario.
+
+    Este decorador comprueba si el token de autenticación proporcionado en
+    la cabecera 'Authorization' es válido. Si el token es válido, se
+    asigna el usuario correspondiente a la solicitud. Si el token no es
+    válido o no está registrado, se devuelve un error.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        UUID_PATTERN = re.compile(
+            r'Bearer (?P&lt;token&gt;[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})'
+        )
+        bearer_auth = request.headers.get('Authorization')
+        if m := re.fullmatch(UUID_PATTERN, bearer_auth):
+            token_reg = m['token']
+            try:
+                token = Token.objects.get(key=token_reg)
+                request.user = token.user
+            except Token.DoesNotExist:
+                return JsonResponse({'error': 'Token de autenticación no registrado'}, status=401)
+        else:
+            return JsonResponse({'error': 'Token de autenticación inválido'}, status=400)
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_1">Descripción</h4>
+<p>El decorador verify_token verifica el token de autenticación del usuario. Si el token es válido, asigna el usuario correspondiente a la solicitud; de lo contrario, devuelve un error.</p>
+<h3 id="required_method">required_method</h3>
+<pre><code class="language-python">def required_method(method_type):
+    &quot;&quot;&quot;
+    Verifica que el método de la solicitud sea el esperado.
+
+    Este decorador comprueba si el método HTTP de la solicitud coincide
+    con el tipo de método requerido. Si no coincide, se devuelve un error
+    de método no permitido.
+    &quot;&quot;&quot;
+    def decorator(func):
+        def wrapper(request, *args, **kwargs):
+            if request.method != method_type:
+                return JsonResponse({'error': 'Método no permitido'}, status=405)
+            return func(request, *args, **kwargs)
+
+        return wrapper
+
+    return decorator
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_2">Descripción</h4>
+<p>El decorador required_method verifica que el método HTTP de la solicitud coincida con el tipo de método requerido. Si no coincide, devuelve un error 405.</p>
+<h3 id="load_json_body">load_json_body</h3>
+<pre><code class="language-python">def required_fields(*fields, model):
+    &quot;&quot;&quot;
+    Verifica que los campos requeridos estén presentes en el cuerpo de la solicitud.
+
+    Este decorador comprueba si los campos requeridos están presentes en
+    el cuerpo JSON de la solicitud. Si falta algún campo, se devuelve un
+    error.
+    &quot;&quot;&quot;
+    def decorator(func):
+        def wrapper(request, *args, **kwargs):
+            json_body = json.loads(request.body)
+            for field in fields:
+                if field not in json_body:
+                    return JsonResponse({'error': 'Faltan campos requeridos'}, status=400)
+            return func(request, *args, **kwargs)
+
+        return wrapper
+
+    return decorator
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_3">Descripción</h4>
+<p>El decorador load_json_body carga el cuerpo de la solicitud como un objeto JSON. Si el cuerpo está vacío o no es un JSON válido, devuelve un error.</p>
+<h3 id="required_fields">required_fields</h3>
+<pre><code class="language-python">def required_fields(*fields, model):
+    &quot;&quot;&quot;
+    Verifica que los campos requeridos estén presentes en el cuerpo de la solicitud.
+
+    Este decorador comprueba si los campos requeridos están presentes en
+    el cuerpo JSON de la solicitud. Si falta algún campo, se devuelve un
+    error.
+    &quot;&quot;&quot;
+    def decorator(func):
+        def wrapper(request, *args, **kwargs):
+            json_body = json.loads(request.body)
+            for field in fields:
+                if field not in json_body:
+                    return JsonResponse({'error': 'Faltan campos requeridos'}, status=400)
+            return func(request, *args, **kwargs)
+
+        return wrapper
+
+    return decorator
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_4">Descripción</h4>
+<p>El decorador required_fields verifica que los campos requeridos estén presentes en el cuerpo de la solicitud. Si falta algún campo, devuelve un error.</p>
+<h3 id="verify_admin">verify_admin</h3>
+<pre><code class="language-python">def verify_admin(func):
+    &quot;&quot;&quot;
+    Verifica que el usuario autenticado sea un administrador.
+
+    Este decorador comprueba si el usuario autenticado tiene el rol de
+    administrador. Si no es un administrador, se devuelve un error de
+    acceso denegado.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        if request.user.is_authenticated:
+            if request.user.profile.role == 'A':
+                return func(request, *args, **kwargs)
+        return JsonResponse({'error': 'El usuario debe ser un administrador'}, status=403)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_5">Descripción</h4>
+<p>El decorador verify_admin verifica que el usuario autenticado sea un administrador. Si no lo es, devuelve un error 403.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

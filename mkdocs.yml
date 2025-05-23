@@ -1,0 +1,13 @@
+site_name: Grow
+nav:
+  - Inicio: index.md
+  - Backend: Backend/index.md
+  - Frontend: Frontend/index.md
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+markdown_extensions:
+  - attr_list
+  - md_in_html
