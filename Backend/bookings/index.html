@@ -1,0 +1,1595 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentación de la Aplicación Bookings - Grow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-aplicacion-bookings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Grow" class="md-header__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentación de la Aplicación Bookings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Frontend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grow" class="md-nav__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Grow
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#timeslot" class="md-nav__link">
+    <span class="md-ellipsis">
+      TimeSlot
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TimeSlot">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Booking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Booking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serializadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serializadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serializadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bookingserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      BookingSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BookingSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timeslotserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      TimeSlotSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="TimeSlotSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bookingearningsserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      BookingEarningsSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BookingEarningsSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vistas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vistas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user_booking_list" class="md-nav__link">
+    <span class="md-ellipsis">
+      user_booking_list
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="user_booking_list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create_booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      create_booking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="create_booking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit_booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit_booking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="edit_booking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#booking_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      booking_detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="booking_detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel_booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      cancel_booking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="cancel_booking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_available_dates" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_available_dates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_available_dates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_earnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_earnings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_earnings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      URLs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#utilitarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utilitarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utilitarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get_available_time_slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_available_time_slots
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_available_time_slots">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is_working_day" class="md-nav__link">
+    <span class="md-ellipsis">
+      is_working_day
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="is_working_day">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decoradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoradores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decoradores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify_booking" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_booking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_booking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_barber_and_timeslot_existence" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_barber_and_timeslot_existence
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="validate_barber_and_timeslot_existence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_barber_availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_barber_availability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="validate_barber_availability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-aplicacion-bookings">Documentación de la Aplicación Bookings</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La aplicación <code>bookings</code> gestiona las reservas de servicios de los usuarios. Permite a los usuarios crear, editar, cancelar y listar sus reservas, así como obtener información sobre las fechas y horarios disponibles.</p>
+<h2 id="modelos">Modelos</h2>
+<h3 id="timeslot">TimeSlot</h3>
+<pre><code class="language-python">class TimeSlot(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa un bloque horario para una reserva.
+
+    Attributes
+    ----------
+    start_time : TimeField
+        Hora de inicio del bloque.
+    end_time : TimeField
+        Hora de fin del bloque.
+    &quot;&quot;&quot;
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+
+    def __str__(self):
+        &quot;&quot;&quot;
+        Devuelve una representación legible del bloque horario.
+
+        Returns
+        -------
+        str
+            Cadena con el formato 'HH:MM:SS-HH:MM:SS'.
+        &quot;&quot;&quot;
+        return f'{self.start_time}-{self.end_time}'
+</code></pre>
+<p>...</p>
+<h4 id="descripcion">Descripción</h4>
+<p>El modelo TimeSlot representa un bloque horario para una reserva, con atributos para la hora de inicio y fin.</p>
+<h2 id="booking">Booking</h2>
+<pre><code class="language-python">class Booking(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa una reserva de servicio entre un cliente y un barbero.
+
+    Attributes
+    ----------
+    user : ForeignKey
+        Usuario que realiza la reserva.
+    barber : ForeignKey
+        Usuario con rol de barbero que atiende la reserva.
+    service : ForeignKey
+        Servicio seleccionado para la reserva.
+    date : DateField
+        Fecha de la reserva.
+    time_slot : ForeignKey
+        Bloque horario en el que se agenda la reserva.
+    status : IntegerField
+        Estado de la reserva (confirmada o cancelada).
+    created_at : DateTimeField
+        Fecha de creación de la reserva.
+    &quot;&quot;&quot;
+    class Meta:
+        unique_together = ['barber', 'date', 'time_slot']
+
+    class Status(models.IntegerChoices):
+        &quot;&quot;&quot;
+        Enumeración de los posibles estados de una reserva.
+        &quot;&quot;&quot;
+        CONFIRMED = 2, 'Confirmed'
+        CANCELLED = -1, 'Cancelled'
+
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='bookings'
+    )
+    barber = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE,
+        related_name='barber_bookings',
+        limit_choices_to={'profile__role': Profile.Role.WORKER},
+        verbose_name='Barbero',
+    )
+    service = models.ForeignKey(Service, on_delete=models.CASCADE, related_name='bookings')
+    date = models.DateField()
+    time_slot = models.ForeignKey(TimeSlot, on_delete=models.CASCADE, related_name='bookings')
+    status = models.IntegerField(choices=Status.choices, default=Status.CONFIRMED)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        &quot;&quot;&quot;
+        Devuelve una representación legible de la reserva.
+
+        Returns
+        -------
+        str
+            Cadena con el formato 'usuario servicio fecha horario'.
+        &quot;&quot;&quot;
+        return f'{self.user} {self.service} {self.date} {self.time_slot}'
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_1">Descripción</h4>
+<p>El modelo Booking representa una reserva de servicio entre un cliente y un barbero, incluyendo información sobre el usuario, el barbero, el servicio, la fecha, el horario y el estado de la reserva.</p>
+<h2 id="serializadores">Serializadores</h2>
+<h3 id="bookingserializer">BookingSerializer</h3>
+<pre><code class="language-python">class BookingSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para una reserva.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        &quot;&quot;&quot;
+        Serializa una instancia de reserva.
+
+        Parameters
+        ----------
+        instance : Booking
+            La instancia de reserva a serializar.
+
+        Returns
+        -------
+        dict
+            Un diccionario que representa la instancia de reserva.
+        &quot;&quot;&quot;
+        return {
+            'id': instance.id,
+            'user': instance.user.id,
+            'service': ServiceSerializer(instance.service).serialize_instance(instance.service),
+            'date': instance.date,
+            'time_slot': TimeSlotSerializer(instance.time_slot).serialize_instance(
+                instance.time_slot
+            ),
+            'barber': instance.barber.get_full_name(),
+            'barber_id': instance.barber.id,
+            'status': instance.get_status_display(),
+            'created_at': instance.created_at,
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_2">Descripción</h4>
+<p>El BookingSerializer se utiliza para serializar instancias de reservas, proporcionando una representación en formato JSON de los atributos relevantes.</p>
+<h3 id="timeslotserializer">TimeSlotSerializer</h3>
+<pre><code class="language-python">class TimeSlotSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para un bloque horario.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        &quot;&quot;&quot;
+        Serializa una instancia de bloque horario.
+
+        Parameters
+        ----------
+        instance : TimeSlot
+            La instancia de bloque horario a serializar.
+
+        Returns
+        -------
+        dict
+            Un diccionario que representa la instancia de bloque horario.
+        &quot;&quot;&quot;
+        return {
+            'id': instance.id,
+            'start_time': instance.start_time,
+            'end_time': instance.end_time,
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_3">Descripción</h4>
+<p>El TimeSlotSerializer se utiliza para serializar instancias de bloques horarios, proporcionando una representación en formato JSON de los atributos relevantes.</p>
+<h3 id="bookingearningsserializer">BookingEarningsSerializer</h3>
+<pre><code class="language-python">class BookingEarningsSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para el resumen de ganancias de reservas.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance=None) -&gt; dict:
+        &quot;&quot;&quot;
+        Serializa el resumen de ganancias de las reservas.
+
+        Parameters
+        ----------
+        instance : Booking, opcional
+            La instancia de reserva (no se utiliza en este método).
+
+        Returns
+        -------
+        dict
+            Un diccionario que contiene el resumen de ganancias.
+        &quot;&quot;&quot;
+        summary = Booking.earnings_summary()
+        return {
+            'daily_earnings': summary['daily'],
+            'weekly_earnings': summary['weekly'],
+            'monthly_earnings': summary['monthly'],
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_4">Descripción</h4>
+<p>El BookingEarningsSerializer se utiliza para serializar el resumen de ganancias de las reservas, proporcionando una representación en formato JSON de los ingresos diarios, semanales y mensuales.</p>
+<h2 id="vistas">Vistas</h2>
+<h3 id="user_booking_list">user_booking_list</h3>
+<pre><code class="language-python">
+@csrf_exempt
+@required_method('GET')
+@verify_token
+def user_booking_list(request):
+    &quot;&quot;&quot;
+    Devuelve una lista de todas las reservas de usuario en formato JSON.
+    Este endpoint requiere que el usuario esté autenticado.
+    Realiza una consulta a la base de datos para obtener todas las reservas de un usuario
+    y las serializa antes de devolverlas en una respuesta JSON.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con la lista de reservas.
+    &quot;&quot;&quot;
+    bookings = Booking.objects.filter(user=request.user)
+    bookings_serializer = [BookingSerializer(booking).serialize() for booking in bookings]
+    return JsonResponse(bookings_serializer, safe=False, status=200)
+</code></pre>
+<h4 id="descripcion_5">Descripción</h4>
+<p>Este endpoint devuelve una lista de todas las reservas del usuario autenticado en formato JSON.</p>
+<h3 id="create_booking">create_booking</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@required_fields('service', 'time_slot', 'date', 'barber', model=Booking)
+@verify_token
+@validate_barber_and_timeslot_existence
+@validate_barber_availability
+def create_booking(request):
+    &quot;&quot;&quot;
+    Crea una nueva reserva.
+
+    Este endpoint permite a un usuario autenticado crear una nueva reserva
+    proporcionando el servicio, el horario, la fecha y el barbero.
+    Si el servicio no existe, devuelve un error.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP que contiene los datos de la reserva.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con el ID de la nueva reserva o un error si el servicio no se encuentra.
+    &quot;&quot;&quot;
+    service_pk = request.json_body['service']
+    barber_id = request.json_body['barber']
+    date = request.json_body['date']
+
+    try:
+        service = Service.objects.get(pk=service_pk)
+    except Service.DoesNotExist:
+        return JsonResponse({'error': 'Servicio no encontrado.'}, status=400)
+
+    try:
+        barber_profile = Profile.objects.get(user_id=barber_id, role=Profile.Role.WORKER)
+    except Profile.DoesNotExist:
+        return JsonResponse({'error': 'Barbero no encontrado o no válido.'}, status=404)
+
+    booking = Booking.objects.create(
+        user=request.user,
+        barber=barber_profile.user,
+        service=service,
+        date=date,
+        time_slot=request.time_slot,
+    )
+
+    return JsonResponse({'id': booking.pk})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_6">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado crear una nueva reserva proporcionando el servicio, el horario, la fecha y el barbero.</p>
+<h3 id="edit_booking">edit_booking</h3>
+<pre><code class="language-python">@login_required
+@csrf_exempt
+@required_method('POST')
+@load_json_body
+@required_fields('service', 'time_slot', 'date', 'barber', model=Booking)
+@verify_token
+@verify_booking
+@validate_barber_and_timeslot_existence
+@validate_barber_availability
+def edit_booking(request, booking_pk):
+    &quot;&quot;&quot;
+    Edita una reserva existente.
+
+    Este endpoint permite a un usuario autenticado editar una reserva
+    existente proporcionando el nuevo servicio, horario, fecha y barbero.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP que contiene los datos de la reserva.
+    booking_pk : int
+        ID de la reserva a editar.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con un mensaje de éxito.
+    &quot;&quot;&quot;
+    service_pk = request.json_body['service']
+    date = request.json_body['date']
+
+    service = Service.objects.get(pk=service_pk)
+    booking = request.booking
+
+    booking.service = service
+    booking.barber = request.barber_profile.user
+    booking.date = date
+    booking.time_slot = request.time_slot
+    booking.save()
+
+    return JsonResponse({'msg': 'La reserva ha sido editada'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_7">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado editar una reserva existente.</p>
+<h3 id="booking_detail">booking_detail</h3>
+<pre><code class="language-python">@login_required
+@csrf_exempt
+@required_method('GET')
+@verify_booking
+def booking_detail(request, booking_pk):
+    &quot;&quot;&quot;
+    Devuelve los detalles de una reserva específica.
+
+    Este endpoint permite a un usuario autenticado obtener los detalles
+    de una reserva específica utilizando su ID.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+    booking_pk : int
+        ID de la reserva.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con los detalles de la reserva.
+    &quot;&quot;&quot;
+    booking = request.booking
+    serializer = BookingSerializer(booking, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_8">Descripción</h4>
+<p>Este endpoint devuelve los detalles de una reserva específica utilizando su ID.</p>
+<h3 id="cancel_booking">cancel_booking</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@verify_token
+@verify_booking
+def cancel_booking(request, booking_pk):
+    &quot;&quot;&quot;
+    Cancela una reserva existente.
+
+    Este endpoint permite a un usuario autenticado cancelar una reserva
+    específica utilizando su ID.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+    booking_pk : int
+        ID de la reserva a cancelar.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con un mensaje de éxito.
+    &quot;&quot;&quot;
+    booking = request.booking
+    booking.delete()
+    return JsonResponse({'msg': 'La reserva ha sido cancelada'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_9">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado cancelar una reserva específica.</p>
+<h3 id="get_available_dates">get_available_dates</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+def get_available_dates(request):
+    &quot;&quot;&quot;
+    Devuelve las fechas disponibles para reservas de un barbero específico.
+
+    Parámetros GET:
+    - barber_id: ID del barbero para filtrar (requerido)
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con las fechas y horarios disponibles para el barbero especificado.
+    &quot;&quot;&quot;
+    barber_id = request.GET.get('barber_id')
+
+    if not barber_id:
+        return JsonResponse({'error': 'El parámetro barber_id es requerido'}, status=400)
+
+    try:
+        barber = User.objects.get(id=barber_id, profile__role=Profile.Role.WORKER)
+    except User.DoesNotExist:
+        return JsonResponse({'error': 'Barbero no encontrado'}, status=404)
+
+    now = timezone.now()
+    today = now.date()
+    start_date = today
+    end_date = today + timedelta(days=13)  # 14 días desde hoy, incluyendo hoy.
+
+    available_slots = {}
+    current_date = start_date
+
+    while current_date &lt;= end_date:
+        if is_working_day(current_date):
+            current_time = now.time() if current_date == today else None
+            available_slots[current_date.isoformat()] = get_available_time_slots(
+                barber, current_date, current_time
+            )
+        current_date += timedelta(days=1)
+
+    return JsonResponse(
+        {
+            'barber_id': barber.id,
+            'barber_name': barber.get_full_name() or barber.username,
+            'available_dates': available_slots,
+        }
+    )
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_10">Descripción</h4>
+<p>Este endpoint devuelve las fechas y horarios disponibles para reservas de un barbero específico.</p>
+<h3 id="get_earnings">get_earnings</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+@verify_admin
+def get_earnings(request):
+    &quot;&quot;&quot;
+    Obtiene las ganancias diarias del mes actual basadas en reservas confirmadas.
+
+    Esta vista recorre cada día del mes actual y calcula el total de ingresos generados
+    por las reservas confirmadas (status = CONFIRMED). Las ganancias se determinan
+    a partir del precio del servicio asociado a cada reserva.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        La solicitud HTTP entrante. Debe ser de tipo GET y debe incluir un token de autenticación válido.
+        Solo accesible por usuarios con permisos de administrador.
+
+    Returns
+    -------
+    JsonResponse
+        Un objeto JSON con:
+            - 'labels': Lista de fechas (str) en formato 'YYYY-MM-DD'.
+            - 'values': Lista de floats representando las ganancias totales por día.
+    &quot;&quot;&quot;
+    now = timezone.now()
+    first_day_of_month = now.replace(day=1)
+    last_day_of_month = (first_day_of_month + timezone.timedelta(days=31)).replace(
+        day=1
+    ) - timezone.timedelta(days=1)
+
+    total_earnings = []
+    labels = []
+
+    for day in range(1, last_day_of_month.day + 1):
+        date = first_day_of_month.replace(day=day)
+        bookings = Booking.objects.filter(created_at__date=date, status=Booking.Status.CONFIRMED)
+        earnings = sum(booking.service.price for booking in bookings)
+        total_earnings.append(earnings)
+        labels.append(date.strftime('%Y-%m-%d'))
+
+    return JsonResponse(
+        {
+            'labels': labels,
+            'values': total_earnings,
+        }
+    )
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_11">Descripción</h4>
+<p>Este endpoint obtiene las ganancias diarias del mes actual basadas en reservas confirmadas.</p>
+<h2 id="urls">URLs</h2>
+<pre><code class="language-python">from django.urls import path
+from . import views
+
+name = 'bookings'
+urlpatterns = [
+    path('', views.user_booking_list, name='user_booking_list'),
+    path('get-earnings/', views.get_earnings, name='get-earnings'),
+    path('&lt;int:booking_pk&gt;/', views.booking_detail, name='booking_detail'),
+    path('add/', views.create_booking, name='add-booking'),
+    path('dates/', views.get_available_dates, name='add-available-dates'),
+    path('&lt;int:booking_pk&gt;/edit/', views.edit_booking, name='edit-booking'),
+    path('&lt;int:booking_pk&gt;/cancel/', views.cancel_booking, name='cancel-booking'),
+]
+</code></pre>
+<p>...</p>
+<h2 id="utilitarios">Utilitarios</h2>
+<h3 id="get_available_time_slots">get_available_time_slots</h3>
+<pre><code class="language-python">def get_available_time_slots(barber, date, current_time=None):
+    &quot;&quot;&quot;
+    Obtiene los horarios disponibles para un barbero en una fecha específica.
+
+    Parameters
+    ----------
+    barber : Barber
+        Instancia del barbero.
+    date : datetime.date
+        Fecha para la que se buscan los horarios.
+    current_time : datetime.time, opcional
+        Hora actual, utilizada para excluir horarios pasados.
+
+    Returns
+    -------
+    list of dict
+        Lista de horarios disponibles, donde cada horario es un diccionario
+        que contiene las siguientes claves:
+            - id : int
+            - start_time : str
+            - end_time : str
+    &quot;&quot;&quot;
+    time_slots = TimeSlot.objects.all()
+    booked_slots = Booking.objects.filter(barber=barber, date=date).values_list(
+        'time_slot', flat=True
+    )
+    available_time_slots = time_slots.exclude(id__in=booked_slots)
+
+    if current_time:
+        available_time_slots = available_time_slots.filter(start_time__gt=current_time)
+
+    return [
+        {
+            'id': slot.id,
+            'start_time': slot.start_time.strftime('%H:%M'),
+            'end_time': slot.end_time.strftime('%H:%M'),
+        }
+        for slot in available_time_slots
+    ]
+</code></pre>
+<h4 id="descripcion_12">Descripción</h4>
+<p>Esta función obtiene los horarios disponibles para un barbero en una fecha específica, excluyendo los horarios ya reservados y, opcionalmente, los horarios pasados.</p>
+<h3 id="is_working_day">is_working_day</h3>
+<pre><code class="language-python">def is_working_day(date):
+    &quot;&quot;&quot;
+    Determina si una fecha es día laboral (excluye domingos).
+
+    Parameters
+    ----------
+    date : datetime.date
+        Fecha a evaluar.
+
+    Returns
+    -------
+    bool
+        True si es día laboral, False en caso contrario.
+    &quot;&quot;&quot;
+    return date.weekday() != 6  # Excluye domingos.
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_13">Descripción</h4>
+<p>Esta función determina si una fecha es un día laboral, excluyendo los domingos.</p>
+<h2 id="decoradores">Decoradores</h2>
+<h3 id="verify_booking">verify_booking</h3>
+<pre><code class="language-python">
+def verify_booking(func):
+    &quot;&quot;&quot;
+    Decorador que intenta recuperar una reserva (booking) a partir de 'booking_pk' en los parámetros de la URL.
+
+    Si la reserva existe, se adjunta al objeto request como 'request.booking'.
+    Si no existe, devuelve una respuesta JSON con error 404 (Not Found).
+
+    Parameters
+    ----------
+    func : callable
+        Vista a decorar.
+
+    Returns
+    -------
+    callable
+        Vista decorada con la verificación de existencia de la reserva.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        try:
+            booking = Booking.objects.get(id=kwargs['booking_pk'])
+            request.booking = booking
+        except Booking.DoesNotExist:
+            return JsonResponse({'error': 'Booking not found'}, status=404)
+
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_14">Descripción</h4>
+<p>Este decorador verifica la existencia de una reserva y la adjunta al objeto request. Si la reserva no existe, devuelve un error 404.</p>
+<h3 id="validate_barber_and_timeslot_existence">validate_barber_and_timeslot_existence</h3>
+<pre><code class="language-python">def validate_barber_and_timeslot_existence(view_func):
+    &quot;&quot;&quot;
+    Decorador que valida la existencia del barbero y del intervalo de tiempo (time slot)
+    en los datos enviados con la solicitud.
+
+    Agrega el perfil del barbero y el time slot al objeto request si existen.
+    Si alguno no existe o no es válido, devuelve una respuesta JSON con el error correspondiente.
+
+    Parameters
+    ----------
+    view_func : callable
+        Vista a decorar.
+
+    Returns
+    -------
+    callable
+        Vista decorada con validación de barbero e intervalo de tiempo.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        data = request.json_body
+
+        try:
+            request.barber_profile = Profile.objects.get(user_id=data['barber'])
+            if request.barber_profile.role != Profile.Role.WORKER:
+                return JsonResponse({'error': 'The user is not a Barber'}, status=400)
+        except Profile.DoesNotExist:
+            return JsonResponse({'error': 'Barber not found'}, status=404)
+
+        try:
+            request.time_slot = TimeSlot.objects.get(pk=data['time_slot'])
+        except TimeSlot.DoesNotExist:
+            return JsonResponse({'error': 'Invalid time slot'}, status=404)
+
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_15">Descripción</h4>
+<p>Este decorador valida la existencia del barbero y del intervalo de tiempo en los datos de la solicitud. Si alguno no existe, devuelve un error correspondiente.</p>
+<h3 id="validate_barber_availability">validate_barber_availability</h3>
+<pre><code class="language-python">def validate_barber_availability(view_func):
+    &quot;&quot;&quot;
+    Decorador que valida si el barbero está disponible en la fecha y hora solicitadas.
+
+    Utiliza los datos 'date', 'barber_profile' y 'time_slot' previamente cargados en el objeto request.
+    Si ya existe una reserva para ese barbero en la fecha y horario indicados,
+    devuelve una respuesta JSON con error 400 (Bad Request).
+
+    Parameters
+    ----------
+    view_func : callable
+        Vista a decorar.
+
+    Returns
+    -------
+    callable
+        Vista decorada que valida la disponibilidad del barbero.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        date = request.json_body['date']
+        barber_user = request.barber_profile.user
+        time_slot = request.time_slot
+
+        if Booking.objects.filter(barber=barber_user, date=date, time_slot=time_slot).exists():
+            return JsonResponse(
+                {'error': 'El barbero no está disponible en ese horario.'}, status=400
+            )
+
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_16">Descripción</h4>
+<p>Este decorador valida si el barbero está disponible en la fecha y hora solicitadas. Si ya existe una reserva, devuelve un error 400.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

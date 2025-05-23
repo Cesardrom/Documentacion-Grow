@@ -1,0 +1,1131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentación de la Aplicación Orders - Grow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-aplicacion-orders" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Grow" class="md-header__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentación de la Aplicación Orders
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Frontend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grow" class="md-nav__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Grow
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serializadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serializadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serializadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#orderserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      OrderSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OrderSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_user" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_user
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_user">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_credit_card" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_credit_card
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="validate_credit_card">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validate_status" class="md-nav__link">
+    <span class="md-ellipsis">
+      validate_status
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="validate_status">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vistas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vistas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user_order_list" class="md-nav__link">
+    <span class="md-ellipsis">
+      user_order_list
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="user_order_list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#order_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      order_detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="order_detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="add_order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pay_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      pay_order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="pay_order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cancel_order" class="md-nav__link">
+    <span class="md-ellipsis">
+      cancel_order
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="cancel_order">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_earnings" class="md-nav__link">
+    <span class="md-ellipsis">
+      get_earnings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="get_earnings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      URLs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-aplicacion-orders">Documentación de la Aplicación Orders</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La aplicación <code>orders</code> gestiona las órdenes de compra realizadas por los usuarios. Permite a los usuarios crear, ver, pagar y cancelar órdenes, así como a los administradores obtener un resumen de las ganancias.</p>
+<h2 id="modelos">Modelos</h2>
+<h3 id="_1"></h3>
+<pre><code class="language-python">
+class Order(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa una orden de compra realizada por un usuario.
+
+    Attributes
+    ----------
+    status : CharField
+        Estado de la orden: Pendiente, Completada o Cancelada.
+    products : ManyToManyField
+        Lista de productos asociados a la orden.
+    price : DecimalField
+        Precio total de la orden (opcional).
+    created_at : DateTimeField
+        Fecha y hora de creación de la orden.
+    updated_at : DateTimeField
+        Fecha y hora de la última actualización.
+    user : ForeignKey
+        Usuario que realizó la orden.
+    &quot;&quot;&quot;
+    class Status(models.TextChoices):
+        PENDING = 'P', 'Pending'
+        COMPLETED = 'C', 'Completed'
+        CANCELLED = 'X', 'Cancelled'
+
+    status = models.CharField(max_length=1, choices=Status.choices, default=Status.PENDING)
+    products = models.ManyToManyField('products.Product', blank=True)
+    price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='orders'
+    )
+
+    def __str__(self):
+        return f'{self.user} Status:{self.status}'
+
+    def add(self, product):
+        self.products.add(product)
+        self.save()
+
+    @classmethod
+    def earnings_summary(cls):
+        today = now().date()
+        start_week = today - timedelta(days=today.weekday())
+        start_month = today.replace(day=1)
+
+        daily = (
+            cls.objects.filter(created_at=today, status=cls.Status.COMPLETED).aggregate(
+                total=Sum('price')
+            )['total'] or 0
+        )
+
+        weekly = (
+            cls.objects.filter(
+                created_at__gte=start_week, created_at__lte=today, status=cls.Status.COMPLETED
+            ).aggregate(total=Sum('price'))['total'] or 0
+        )
+
+        monthly = (
+            cls.objects.filter(
+                created_at__gte=start_month, created_at__lte=today, status=cls.Status.COMPLETED
+            ).aggregate(total=Sum('price'))['total'] or 0
+        )
+
+        return {'daily': daily, 'weekly': weekly, 'monthly': monthly}
+</code></pre>
+<h4 id="descripcion">Descripción</h4>
+<p>El modelo Order representa una orden de compra, incluyendo atributos como estado, productos, precio, fechas de creación y actualización, y el usuario que realizó la orden.</p>
+<h2 id="serializadores">Serializadores</h2>
+<h3 id="orderserializer">OrderSerializer</h3>
+<pre><code class="language-python">
+class OrderSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para el modelo Order.
+
+    Este serializador convierte instancias de la clase Order en diccionarios
+    que pueden ser fácilmente convertidos a JSON.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        return {
+            'id': instance.id,
+            'products': ProductSerializer(
+                instance.products.all(), request=self.request
+            ).serialize(),
+            'price': instance.price,
+            'created_at': instance.created_at,
+            'status': instance.get_status_display(),
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_1">Descripción</h4>
+<p>El OrderSerializer se utiliza para serializar instancias del modelo Order, proporcionando una representación en formato JSON de los atributos relevantes.
+Decoradores</p>
+<h3 id="verify_user">verify_user</h3>
+<pre><code class="language-python">def verify_user(func):
+    &quot;&quot;&quot;
+    Verifica que el usuario autenticado sea el propietario de la orden.
+
+    Si el usuario que realiza la solicitud no es el propietario de la orden
+    especificada en `order_pk`, se devuelve una respuesta con error 403 (Forbidden).
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        order = Order.objects.get(pk=kwargs['order_pk'])
+        if order.user != request.user:
+            return JsonResponse({'error': 'User  is not the owner of requested order'}, status=403)
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_2">Descripción</h4>
+<p>Este decorador verifica que el usuario autenticado sea el propietario de la orden especificada. Si no lo es, devuelve un error 403.</p>
+<h3 id="verify_order">verify_order</h3>
+<pre><code class="language-python">def verify_order(func):
+    &quot;&quot;&quot;
+    Verifica si la orden especificada por `order_pk` existe.
+
+    Si existe, se asigna a `request.order`; de lo contrario, se retorna un error 404.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        try:
+            order = Order.objects.get(pk=kwargs['order_pk'])
+            request.order = order
+        except Order.DoesNotExist:
+            return JsonResponse({'error': 'Order not found'}, status=404)
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_3">Descripción</h4>
+<p>Este decorador verifica la existencia de la orden especificada y la asigna a request.order. Si no existe, devuelve un error 404.</p>
+<h3 id="validate_credit_card">validate_credit_card</h3>
+<pre><code class="language-python">def validate_credit_card(func):
+    &quot;&quot;&quot;
+    Valida los datos de la tarjeta de crédito enviados en la solicitud.
+
+    Comprueba el formato del número de tarjeta, la fecha de expiración y el CVC.
+    También verifica que la tarjeta no esté expirada.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        CARD_NUMBER_PATTERN = re.compile(r'^\d{4}-\d{4}-\d{4}-\d{4}$')
+        EXP_DATE_PATTERN = re.compile(r'^(0[1-9]|1[0-2])\/\d{4}$')
+        CVC_PATTERN = re.compile(r'^\d{3}$')
+        card_number = request.json_body['card-number']
+        exp_date = request.json_body['exp-date']
+        cvc = request.json_body['cvc']
+        if not CARD_NUMBER_PATTERN.match(card_number):
+            return JsonResponse({'error': 'Invalid card number'}, status=400)
+        if not EXP_DATE_PATTERN.match(exp_date):
+            return JsonResponse({'error': 'Invalid expiration date'}, status=400)
+        if not CVC_PATTERN.match(cvc):
+            return JsonResponse({'error': 'Invalid CVC'}, status=400)
+        card_exp_date = datetime.strptime(exp_date, '%m/%Y')
+        current_date = datetime.now()
+        if card_exp_date &lt; current_date:
+            return JsonResponse({'error': 'Card expired'}, status=400)
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_4">Descripción</h4>
+<p>Este decorador valida los datos de la tarjeta de crédito enviados en la solicitud, asegurando que el formato sea correcto y que la tarjeta no esté expirada.</p>
+<h3 id="validate_status">validate_status</h3>
+<pre><code class="language-python">def validate_status(func):
+    &quot;&quot;&quot;
+    Valida el estado actual de una orden antes de permitir cambios.
+
+    Impide modificar órdenes con estado `CANCELLED` o `COMPLETED`.
+    &quot;&quot;&quot;
+    def wrapper(request, *args, **kwargs):
+        if request.order.status == Order.Status.CANCELLED:
+            return JsonResponse({'error': 'You cannot modify a canceled order.'}, status=400)
+        if request.order.status == Order.Status.COMPLETED:
+            return JsonResponse({'error': 'You cannot modify a completed order.'}, status=400)
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_5">Descripción</h4>
+<p>Este decorador valida el estado de la orden antes de permitir cambios, impidiendo modificaciones en órdenes que ya han sido completadas o canceladas.</p>
+<h2 id="vistas">Vistas</h2>
+<h3 id="user_order_list">user_order_list</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+def user_order_list(request):
+    &quot;&quot;&quot;
+    Recupera los detalles de todos los pedidos del usuario autenticado.
+
+    Este endpoint permite a un usuario autenticado obtener la información de todas sus órdenes.
+    &quot;&quot;&quot;
+    orders = Order.objects.filter(user=request.user)
+    orders_serializer = [OrderSerializer(order).serialize() for order in orders]
+    return JsonResponse(orders_serializer, safe=False, status=200)
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_6">Descripción</h4>
+<p>Este endpoint devuelve una lista de todas las órdenes del usuario autenticado.</p>
+<h3 id="order_detail">order_detail</h3>
+<pre><code class="language-python">@login_required
+@csrf_exempt
+@required_method('GET')
+@verify_order
+@verify_user
+def order_detail(request, order_pk: int):
+    &quot;&quot;&quot;
+    Recupera los detalles de un pedido específico.
+
+    Este endpoint permite a un usuario autenticado obtener la información de una orden,
+    validando que el pedido exista y que pertenezca al usuario que realiza la solicitud.
+    &quot;&quot;&quot;
+    serializer = OrderSerializer(request.order, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_7">Descripción</h4>
+<p>Este endpoint devuelve los detalles de una orden específica, validando que pertenezca al usuario autenticado.</p>
+<h3 id="add_order">add_order</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@verify_token
+def add_order(request):
+    &quot;&quot;&quot;
+    Crea una nueva orden de pedido.
+
+    Este endpoint permite a un usuario autenticado generar una orden,
+    siempre que exista suficiente stock para los productos solicitados.
+    &quot;&quot;&quot;
+    order_data = request.json_body
+    order = Order(user=request.user)
+    order.save()
+    total_price = Decimal('0.00')
+    for item in order_data['products']:
+        product_pk = item['id']
+        quantity = item['quantity']
+        try:
+            product = Product.objects.get(pk=product_pk)
+        except Product.DoesNotExist:
+            return JsonResponse({'error': f'Product with id {product_pk} not found'}, status=404)
+        if product.stock &lt; quantity:
+            return JsonResponse({'error': f'Insufficient stock for {product.name}'}, status=400)
+        product.stock -= quantity
+        product.save()
+        order.products.add(product)
+        total_price += product.price * Decimal(quantity)
+    order.price = total_price
+    order.save()
+
+    return JsonResponse({'id': order.pk})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_8">Descripción</h4>
+<p>Este endpoint permite a un usuario autenticado crear una nueva orden de pedido, validando la disponibilidad de stock para los productos solicitados.</p>
+<h3 id="pay_order">pay_order</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@required_fields('card-number', 'exp-date', 'cvc', model=Order)
+@verify_token
+@verify_order
+@validate_credit_card
+@verify_user
+@validate_status
+def pay_order(request, order_pk: int):
+    &quot;&quot;&quot;
+    Procesa el pago de una orden.
+
+    Cambia el estado de la orden a 'COMPLETED' si se valida correctamente la tarjeta.
+    &quot;&quot;&quot;
+    request.order.status = Order.Status.COMPLETED
+    request.order.save()
+    return JsonResponse({'msg': 'Your order has been paid and complete successfully'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_9">Descripción</h4>
+<p>Este endpoint permite procesar el pago de una orden, cambiando su estado a 'COMPLETED' si la tarjeta de crédito es válida.</p>
+<h3 id="cancel_order">cancel_order</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@verify_token
+@verify_order
+@verify_user
+@validate_status
+def cancel_order(request, order_pk: int):
+    &quot;&quot;&quot;
+    Cancela una orden de pedido.
+
+    Cambia el estado de la orden a 'CANCELLED' y repone el stock de los productos involucrados.
+    &quot;&quot;&quot;
+    order_data = request.json_body
+    for item in order_data['products']:
+        product_pk = item['id']
+        quantity = item['quantity']
+        try:
+            product = Product.objects.get(pk=product_pk)
+        except Product.DoesNotExist:
+            return JsonResponse({'error': f'Product with id {product_pk} not found'}, status=404)
+        product.stock += quantity
+        product.save()
+    request.order.status = Order.Status.CANCELLED
+    request.order.save()
+    return JsonResponse({'msg': f'Order {order_pk} has been cancelled'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_10">Descripción</h4>
+<p>Este endpoint permite cancelar una orden de pedido, cambiando su estado a 'CANCELLED' y reponiendo el stock de los productos.</p>
+<h3 id="get_earnings">get_earnings</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+@verify_token
+@verify_admin
+def get_earnings(request):
+    &quot;&quot;&quot;
+    Obtiene las ganancias diarias del mes actual para todas las órdenes completadas.
+    &quot;&quot;&quot;
+    now = timezone.now()
+    first_day_of_month = now.replace(day=1)
+    last_day_of_month = (first_day_of_month + timezone.timedelta(days=31)).replace(
+        day=1
+    ) - timezone.timedelta(days=1)
+
+    total_earnings = []
+    labels = []
+
+    for day in range(1, last_day_of_month.day + 1):
+        date = first_day_of_month.replace(day=day)
+        orders = Order.objects.filter(created_at__date=date, status=Order.Status.COMPLETED)
+        earnings = sum(order.price for order in orders)
+
+        total_earnings.append(earnings)
+        labels.append(date.strftime('%Y-%m-%d'))
+
+    return JsonResponse(
+        {
+            'labels': labels,
+            'values': total_earnings,
+        }
+    )
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_11">Descripción</h4>
+<p>Este endpoint permite a los administradores obtener un resumen de las ganancias diarias del mes actual para todas las órdenes completadas.</p>
+<h3 id="urls">URLs</h3>
+<pre><code class="language-python">
+urlpatterns = [
+    path('', views.user_order_list, name='user_order_list'),
+    path('add/', views.add_order, name='add-order'),
+    path('get-earnings/', views.get_earnings, name='get-earnings'),
+    path('&lt;order_pk&gt;/', views.order_detail, name='order-detail'),
+    path('&lt;order_pk&gt;/pay-order/', views.pay_order, name='pay-order'),
+    path('&lt;order_pk&gt;/cancel-order/', views.cancel_order, name='cancel-order'),
+]
+</code></pre>
+<p>...</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

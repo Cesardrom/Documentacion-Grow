@@ -1,0 +1,1014 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Documentación de la Aplicación Events - Grow</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#documentacion-de-la-aplicacion-events" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Grow" class="md-header__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Grow
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documentación de la Aplicación Events
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Backend
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Frontend/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Frontend
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Grow" class="md-nav__button md-logo" aria-label="Grow" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Grow
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frontend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Frontend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serializadores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Serializadores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Serializadores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eventserializer" class="md-nav__link">
+    <span class="md-ellipsis">
+      EventSerializer
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="EventSerializer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decoradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decoradores
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decoradores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#verify_event" class="md-nav__link">
+    <span class="md-ellipsis">
+      verify_event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="verify_event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vistas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vistas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vistas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#event_list" class="md-nav__link">
+    <span class="md-ellipsis">
+      event_list
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="event_list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#event_detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      event_detail
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="event_detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add_event" class="md-nav__link">
+    <span class="md-ellipsis">
+      add_event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="add_event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edit_event" class="md-nav__link">
+    <span class="md-ellipsis">
+      edit_event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="edit_event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete_event" class="md-nav__link">
+    <span class="md-ellipsis">
+      delete_event
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="delete_event">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#descripcion_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Descripción
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      URLs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="documentacion-de-la-aplicacion-events">Documentación de la Aplicación Events</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La aplicación <code>events</code> gestiona eventos programados, permitiendo a los administradores crear, editar, eliminar y listar eventos.</p>
+<h2 id="modelos">Modelos</h2>
+<h3 id="event">Event</h3>
+<pre><code class="language-python">from django.db import models
+
+class Event(models.Model):
+    &quot;&quot;&quot;
+    Modelo que representa un evento programado.
+
+    Atributos
+    ----------
+    name : CharField
+        Nombre del evento.
+    description : TextField
+        #### Descripción opcional del evento.
+    date : DateField
+        Fecha en la que se llevará a cabo el evento.
+    time : TimeField
+        Hora en la que comenzará el evento.
+    image : ImageField
+        Imagen representativa del evento. Puede estar vacía o usar una imagen por defecto.
+    location : CharField
+        Dirección o lugar donde se realiza el evento.
+    created_at : DateTimeField
+        Fecha y hora en la que se creó el evento (automáticamente asignada).
+    &quot;&quot;&quot;
+    name = models.CharField(max_length=100)
+    description = models.TextField(blank=True, null=True)
+    date = models.DateField()
+    time = models.TimeField()
+    image = models.ImageField(
+        upload_to='media/events_images/',
+        default='events_images/no_event.png',
+        blank=True,
+        null=True,
+    )
+    location = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        &quot;&quot;&quot;
+        Retorna una representación legible del evento.
+
+        Returns
+        -------
+        str
+            Cadena con el formato 'Nombre en Fecha en Ubicación'.
+        &quot;&quot;&quot;
+        return f'{self.name} on {self.date} at {self.location}'
+</code></pre>
+<h4 id="descripcion">Descripción</h4>
+<p>El modelo Event representa un evento programado, incluyendo atributos como nombre, Descripción, fecha, hora, imagen y ubicación.</p>
+<h2 id="serializadores">Serializadores</h2>
+<h3 id="eventserializer">EventSerializer</h3>
+<pre><code class="language-python">
+class EventSerializer(BaseSerializer):
+    &quot;&quot;&quot;
+    Serializador para instancias del modelo Event.
+
+    Este serializador transforma una instancia de Event en un diccionario
+    con los campos relevantes para su representación en una API.
+    &quot;&quot;&quot;
+    def serialize_instance(self, instance) -&gt; dict:
+        &quot;&quot;&quot;
+        Serializa una instancia del modelo Event a un diccionario.
+
+        Parameters
+        ----------
+        instance : Event
+            Instancia del modelo Event que se desea serializar.
+
+        Returns
+        -------
+        dict
+            Diccionario con los datos serializados del evento.
+        &quot;&quot;&quot;
+        return {
+            'id': instance.id,
+            'name': instance.name,
+            'description': instance.description,
+            'date': instance.date,
+            'time': instance.time,
+            'location': instance.location,
+            'image': f'{self.build_url(instance.image.url)}',
+        }
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_1">Descripción</h4>
+<p>El EventSerializer se utiliza para serializar instancias del modelo Event, proporcionando una representación en formato JSON de los atributos relevantes.</p>
+<h2 id="decoradores">Decoradores</h2>
+<h3 id="verify_event">verify_event</h3>
+<pre><code class="language-python">
+def verify_event(func):
+    &quot;&quot;&quot;
+    Decorador que intenta recuperar un evento usando 'event_pk' desde los parámetros de la URL.
+    Si el evento existe, se adjunta al objeto request como 'request.event'.
+    Si no existe, devuelve una respuesta JSON con error 404 (No encontrado).
+    Parameters
+    ----------
+    func : callable
+        Vista a decorar.
+    Returns
+    -------
+    callable
+        Vista decorada que incluye la verificación de existencia del evento.
+
+    &quot;&quot;&quot;
+
+    def wrapper(request, *args, **kwargs):
+        try:
+            event = Event.objects.get(id=kwargs['event_pk'])
+            request.event = event
+        except Event.DoesNotExist:
+            return JsonResponse({'error': 'Evento no encontrado'}, status=404)
+
+        return func(request, *args, **kwargs)
+
+    return wrapper
+</code></pre>
+<h4 id="descripcion_2">Descripción</h4>
+<p>El decorador verify_event se utiliza para verificar la existencia de un evento en la base de datos utilizando el event_pk proporcionado en los parámetros de la URL.</p>
+<h2 id="vistas">Vistas</h2>
+<h3 id="event_list">event_list</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('GET')
+def event_list(request):
+    &quot;&quot;&quot;
+    Devuelve una lista de todos los eventos en formato JSON.
+
+    Este endpoint permite obtener todos los eventos registrados en la base de datos.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con la lista de eventos serializados.
+    &quot;&quot;&quot;
+    events = Event.objects.all()
+    serializer = EventSerializer(events, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_3">Descripción</h4>
+<p>Este endpoint devuelve una lista de todos los eventos registrados en la base de datos en formato JSON.</p>
+<h3 id="event_detail">event_detail</h3>
+<pre><code class="language-python">@required_method('GET')
+@verify_event
+def event_detail(request, event_pk):
+    &quot;&quot;&quot;
+    Devuelve los detalles de un evento específico.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+    event_pk : int
+        ID del evento a consultar.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con los detalles del evento.
+    &quot;&quot;&quot;
+    event = request.event
+    serializer = EventSerializer(event, request=request)
+    return serializer.json_response()
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_4">Descripción</h4>
+<p>Este endpoint devuelve los detalles de un evento específico utilizando su ID.</p>
+<h3 id="add_event">add_event</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@required_fields('name', 'description', 'date', 'time', 'location', model=Event)
+@verify_token
+@verify_admin
+def add_event(request):
+    &quot;&quot;&quot;
+    Agrega un nuevo evento.
+
+    Solo un administrador autenticado puede crear eventos nuevos.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP que contiene los datos del evento.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con el ID del evento creado.
+    &quot;&quot;&quot;
+    name = request.json_body['name']
+    description = request.json_body['description']
+    date = request.json_body['date']
+    time = request.json_body['time']
+    location = request.json_body['location']
+    image_base64 = request.json_body.get('image')
+
+    image_file = None
+    if image_base64:
+        try:
+            format_part, data_part = image_base64.split(',')
+            file_format = format_part.split('/')[1].split(';')[0]
+
+            image_data = base64.b64decode(data_part)
+
+            filename = f'service_{uuid.uuid4().hex[:8]}.{file_format}'
+            image_file = ContentFile(image_data, name=filename)
+
+        except Exception as e:
+            return JsonResponse({'error': f'Error procesando la imagen: {str(e)}'}, status=400)
+
+    event = Event.objects.create(
+        name=name,
+        description=description,
+        location=location,
+        date=date,
+        image=image_file,
+        time=time,
+    )
+
+    return JsonResponse({'id': event.pk, 'msg': 'Servicio creado exitosamente'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_5">Descripción</h4>
+<p>Este endpoint permite a un administrador autenticado crear un nuevo evento.</p>
+<h3 id="edit_event">edit_event</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@load_json_body
+@required_fields('name', 'description', 'date', 'time', 'location', model=Event)
+@verify_token
+@verify_admin
+@verify_event
+def edit_event(request, event_pk: int):
+    &quot;&quot;&quot;
+    Edita un evento existente.
+
+    Un administrador autenticado puede modificar los datos de un evento.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP con los datos del evento.
+    event_pk : int
+        ID del evento a editar.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con un mensaje de confirmación.
+    &quot;&quot;&quot;
+    event = request.event
+    event.name = request.json_body['name']
+    event.description = request.json_body['description']
+    event.date = request.json_body['date']
+    event.location = request.json_body['location']
+    event.time = request.json_body['time']
+    image_base64 = request.json_body.get('image')
+    if image_base64:
+        try:
+            format_part, data_part = image_base64.split(',')
+            file_format = format_part.split('/')[1].split(';')[0]
+
+            image_data = base64.b64decode(data_part)
+
+            filename = f'service_{uuid.uuid4().hex[:8]}.{file_format}'
+            image_file = ContentFile(image_data, name=filename)
+            event.image = image_file
+        except Exception as e:
+            return JsonResponse({'error': f'Error procesando la imagen: {str(e)}'}, status=400)
+
+    event.save()
+    return JsonResponse({'msg': 'Event has been edited'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_6">Descripción</h4>
+<p>Este endpoint permite a un administrador autenticado editar un evento existente.</p>
+<h3 id="delete_event">delete_event</h3>
+<pre><code class="language-python">@csrf_exempt
+@required_method('POST')
+@verify_token
+@verify_admin
+@verify_event
+def delete_event(request, event_pk: int):
+    &quot;&quot;&quot;
+    Elimina un evento existente.
+
+    Solo un administrador autenticado puede eliminar eventos.
+
+    Parameters
+    ----------
+    request : HttpRequest
+        Objeto de solicitud HTTP.
+    event_pk : int
+        ID del evento a eliminar.
+
+    Returns
+    -------
+    JsonResponse
+        Respuesta JSON con un mensaje de éxito.
+    &quot;&quot;&quot;
+    event = request.event
+    event.delete()
+    return JsonResponse({'msg': 'Event has been deleted'})
+</code></pre>
+<p>...</p>
+<h4 id="descripcion_7">Descripción</h4>
+<p>Este endpoint permite a un administrador autenticado eliminar un evento existente.</p>
+<h2 id="urls">URLs</h2>
+<pre><code class="language-python">
+name = 'events'
+urlpatterns = [
+    path('', views.event_list, name='event_list'),
+    path('&lt;int:event_pk&gt;/', views.event_detail, name='event-detail'),
+    path('add/', views.add_event, name='add-event'),
+    path('&lt;int:event_pk&gt;/edit/', views.edit_event, name='edit-event'),
+    path('&lt;int:event_pk&gt;/delete/', views.delete_event, name='delete-event'),
+]
+</code></pre>
+<p>...</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
